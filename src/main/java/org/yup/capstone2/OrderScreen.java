@@ -49,12 +49,7 @@ import java.util.Scanner;
 
         //the Processes
         public static void addSandwich() {
-            //code that adds a sandwich but includes logic that
-            //builds th sandwich
-            //attaches prices to every part
-            //Makes a new sandwich. Maybe using different constructors???
-            //Sandwich sandwich = new Sandwich(things that make a sandwich)
-            //sandwich goes into order
+
         }
         public static void addDrink() {
             //for loop that displays the drinks??
@@ -63,32 +58,6 @@ import java.util.Scanner;
         public static void addChips() {
             //for loop that displays the chips
             //they choose a chip, it goes into the order
-        }
-        public static void checkOut() {
-            //sout(order)
-            //souf(Order Total: %.2f, calculateTotal() )
-            //sout(would you like to proceed with checkout Y/N)
-            //-> if Y:
-            // - sout(Would you like to pay with 1) Cash or 2)Debit ?)
-            //      - if (userSelection.equals("cash").toLowerCase){
-            //      sout(Swipe, Insert, or Tap your card)
-            //      String payfunction = scan.nextLine().toLowerCase;
-            //          if(payfunction.equals(tap) ):
-            //                  sout(Approved!)
-            //                  sout(Thank You for ordering from DELI-cious) }
-            //                  else:
-            //      sout(Enter your pin)
-            //      int Pin = scan.nextInt();
-            //      sout(Approved!)
-            //      sout(Thank You for ordering from DELI-cious)
-            //      )
-            // - create a receipt ( Receipt receipt = new Receipt(things that make a receipt) )
-            //sout(receipt)
-            //if i want to display a receipt in the terminal i've gotta be able to read my newly created receipt file??
-            //but every receipt is a new file
-
-            //Checkout Class needs to have a calculate total method
-            //exitApp()
         }
 
         //TODO: MAKE EXIT FUNCTION
