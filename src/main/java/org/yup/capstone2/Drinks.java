@@ -4,13 +4,6 @@ public enum Drinks {
     PINEAPPLEMANGO,
     ORANGE,
     RASPBERRY,
-    LEMONWATER;
+    LEMONWATER
 
-    private String size;
-    private String flavor;
-    private double price;
-
-
-    }
-
-
+}
