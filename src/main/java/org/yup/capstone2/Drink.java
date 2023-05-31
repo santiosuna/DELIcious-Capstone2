@@ -1,6 +1,6 @@
 package org.yup.capstone2;
 
-public enum Drinks {
+public enum Drink {
     PINEAPPLEMANGO,
     ORANGE,
     RASPBERRY,
