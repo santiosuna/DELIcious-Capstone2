@@ -1,5 +1,4 @@
 package org.yup.capstone2;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -155,14 +154,14 @@ public class CheckoutScreen {
 
 
 }
-    // - create a receipt ( Receipt receipt = new Receipt(things that make a receipt) )
-    //sout(receipt)
-    //if i want to display a receipt in the terminal i've gotta be able to read my newly created receipt file??
-    //but every receipt is a new file
-
-    //gonna be a receipt folder where the receipts get saved in
-    //each new order is a receipt
-    //in filewriter figure out how to get it to generate a new filename
-    //receipt is txt not csv-+-+-+-+-+
+//     - create a receipt ( Receipt receipt = new Receipt(things that make a receipt) )
+//    sout(receipt)
+//    if i want to display a receipt in the terminal i've gotta be able to read my newly created receipt file??
+//    but every receipt is a new file
+//
+//    gonna be a receipt folder where the receipts get saved in
+//    each new order is a receipt
+//    in filewriter figure out how to get it to generate a new filename
+//    receipt is txt not csv-+-+-+-+-+
 
 

@@ -1,7 +1,8 @@
 package org.yup.capstone2;
+import java.io.IOException;
 import java.util.Scanner;
 class HomeScreen {
-    public static void homeScreenDisplay() {
+    public static void homeScreenDisplay() throws IOException {
         System.out.println("════════════════════════════════════════════════");
         System.out.println("                ◩ HOME SCREEN ◪                 ");
         System.out.println("════════════════════════════════════════════════");
@@ -16,7 +17,7 @@ class HomeScreen {
 
         switch (choice) {
             case 1:
-                // Code to handle new order
+                OrderScreen.display();
                 break;
             case 0:
                 System.out.println("\n◢◤◢◤◢◤◢◤◢◤◢◤◢◤ Exiting App. Goodbye! ◢◤◢◤◢◤◢◤◢◤◢◤◢◤\n");

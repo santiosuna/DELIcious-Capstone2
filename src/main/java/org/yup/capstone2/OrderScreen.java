@@ -1,5 +1,4 @@
 package org.yup.capstone2;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,9 +6,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
     public class OrderScreen {
 
-        private boolean running = true;
+        private static boolean running = true;
 
-        public void display() throws IOException {
+        public static void display() throws IOException {
 
             while (running) {
                 Scanner scan = new Scanner(System.in);
@@ -49,6 +48,7 @@ import java.util.Scanner;
 
         //the Processes
         public static void addSandwich() {
+
 
         }
         public static void addDrink() {
