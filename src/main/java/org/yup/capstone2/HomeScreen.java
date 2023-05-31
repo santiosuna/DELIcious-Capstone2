@@ -5,7 +5,7 @@ class HomeScreen {
         System.out.println("════════════════════════════════════════════════");
         System.out.println("                ◩ HOME SCREEN ◪                 ");
         System.out.println("════════════════════════════════════════════════");
-        System.out.println("Pleas make a selection:");
+        System.out.println("Please make a selection:");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         System.out.println("════════════════════════════════════════════════");
