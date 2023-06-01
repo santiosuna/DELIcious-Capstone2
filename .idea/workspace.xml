@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14298f4f-be86-451d-bd50-5e79615111e9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Bread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Size.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/CheckoutScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/CheckoutScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Sandwich.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -39,13 +45,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
+  <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "homeScreenClass"
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.yup.capstone2" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.yup.capstone2.Main" />
@@ -79,5 +90,15 @@
       <updated>1685122859119</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
