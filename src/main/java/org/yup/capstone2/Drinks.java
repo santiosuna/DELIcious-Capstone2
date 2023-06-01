@@ -1,31 +1,12 @@
 package org.yup.capstone2;
 
-public class Drinks {
+public class Drinks extends Product {
 
-    private String name;
-    private double price;
     private String size;
 
-    public Drinks(String name, double price, String size) {
-        this.name = name;
-        this.price = price;
+    public Drinks(String name, double totalPrice, String size) {
+        super(name, totalPrice);
         this.size = size;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 
     public String getSize() {
@@ -36,3 +17,4 @@ public class Drinks {
         this.size = size;
     }
 }
+

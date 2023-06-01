@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14298f4f-be86-451d-bd50-5e79615111e9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/CheckoutScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Cheese.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/HomeScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Meats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/RegularToppings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Sandwich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Sauces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Toppings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/yup/capstone2/CheckoutScreenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_29_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_29_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_42_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_42_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_42_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_42_PM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_44_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_30_2023_1_44_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Drinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Drinks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
