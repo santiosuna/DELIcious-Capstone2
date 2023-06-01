@@ -5,11 +5,12 @@ import java.util.List;
 public class Drinks extends Product {
 
     private Size size;
-    private DrinkFlavor myDrinks;
+    private DrinkFlavor drinkFlavor;
 
-    public Drinks(String name, double totalPrice, Size size) {
+    public Drinks(String name, double totalPrice, Size size, DrinkFlavor drinkFlavor) {
         super(name, totalPrice);
         this.size = size;
+        this.drinkFlavor = drinkFlavor;
     }
 
     public Size getSize() {
