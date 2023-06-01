@@ -27,12 +27,18 @@ import java.util.Scanner;
                 switch (userSelection) {
                     case 1:
                         addSandwich();
+                        //TODO: add addSandwich to cart
+                        //ex. myCart.add( addSandwich() )
                         break;
                     case 2:
                         addDrink();
+                        //TODO: add addDrink to cart
+                        //ex. myCart.add( addDrink() )
                         break;
                     case 3:
                         addChips();
+                        //TODO: add addChips to cart
+                        //ex. myCart.add( addChips() )
                         break;
                     case 4:
                         //if they have empty order -> sout(Your cart is empty.)
@@ -133,7 +139,7 @@ import java.util.Scanner;
             //TODO:ADD SANDWICH TO CART
 
         }
-        public static void addDrink() {
+        public static Drinks addDrink() {
             Scanner scanner = new Scanner(System.in);
 
             double drinkPrice = 0;
@@ -194,10 +200,9 @@ import java.util.Scanner;
 
             Drinks drinks = new Drinks(flavorChoice,drinkPrice,size,drinkFlavor);
 
-            //TODO:ADD DRINKS TO CART
-
+            return drinks;
         }
-        public static void addChips() {
+        public static Chips addChips() {
             Scanner scanner = new Scanner(System.in);
 
             ChipFlavors chipFlavors = null;
@@ -229,11 +234,11 @@ import java.util.Scanner;
             }
 
             //TODO:CHANGE CHIP PRICE
-            Chips chips = new Chips(userChoice,2.25,chipFlavors);
+            Chips chips = new Chips(userChoice,1.50,chipFlavors);
 
-            //TODO:ADD CHIPS TO CART
+            return chips;
 
-            System.out.println(chips.getChipFlavors() + "\t\t$" + chips.getTotalPrice());
+//            System.out.println(chips.getChipFlavors() + "\t\t$" + chips.getTotalPrice());
         }
 
         //TODO: MAKE EXIT FUNCTION
