@@ -1,30 +1,29 @@
 package org.yup.capstone2;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
     public class OrderScreen {
-
-        private boolean running = true;
-
-        public void display() throws IOException {
+        private static boolean running = true;
+        public static void display() throws IOException {
 
             while (running) {
                 Scanner scan = new Scanner(System.in);
-                System.out.println("Welcome to the DELI-cious app!");
+                System.out.println("════════════════════════════════════════════════");
+                System.out.println("                ORDER SCREEN                    ");
+                System.out.println("════════════════════════════════════════════════");
+                System.out.println("Please make a selection:\n");
                 System.out.println("1) Add Sandwich \n");
                 System.out.println("2) Add Drink \n");
                 System.out.println("3) Add Chips \n");
                 System.out.println("4) Checkout \n");
                 System.out.println("0) Cancel Order \n");
+                System.out.println("════════════════════════════════════════════════");
+                System.out.println("Enter your selection here:");
+
                 int userSelection = scan.nextInt();
 
                 switch (userSelection) {
                     case 1:
-                        //addSandwichMethod();
-                        //
+                        addSandwich();
                         break;
                     case 2:
                         //addDrinkMethod();
@@ -44,11 +43,89 @@ import java.util.Scanner;
                         System.out.println("Sorry but that wasn't a valid selection");
                 }
             }
-
         }
-
-        //the Processes
         public static void addSandwich() {
+            //Create a new scanner object to read user input
+            Scanner scanner = new Scanner(System.in);
+
+            //Ask the user if they want the sandwich toasted
+            System.out.println("Would you like the sandwich toasted (YES/NO):");
+            String toastedInput = scanner.nextLine();
+            boolean toasted = toastedInput.equalsIgnoreCase("yes");
+
+
+            //Ask the user to select the sandwich size
+            System.out.println("Select your size:");
+            //Iterate over each size option and display it to the user
+            for (Size size : Size.values()) {
+                System.out.println(size.ordinal() + ") " + size);
+            }
+            //Read the user's choice for the size
+            int sizeChoice = scanner.nextInt();
+            // Get the corresponding size value based on the user's choice
+            Size selectedSize = Size.values()[sizeChoice];
+
+
+            //Ask the user to select the bread
+            System.out.println("Select your bread:");
+            //Iterate over each bread option and display it to the user
+            for (Bread bread : Bread.values()) {
+                System.out.println(bread.ordinal() + ") " + bread);
+            }
+            //Read the user's choice for the bread
+            int breadChoice = scanner.nextInt();
+            //Get the corresponding bread value based on the user's choice
+            Bread selectedBread = Bread.values()[breadChoice];
+
+
+            //Ask the user to select the cheese
+            System.out.println("Select your cheese: ");
+            // Iterate over each cheese option and display it to the user
+            for (Cheese cheese : Cheese.values()) {
+                System.out.println(cheese.ordinal() + ") " + cheese);
+            }
+            //Read the user's choice for the cheese
+            int cheeseChoice = scanner.nextInt();
+            // Get the corresponding cheese value based on the user's choice
+            Cheese selectedCheese = Cheese.values()[cheeseChoice];
+
+
+            //Ask the user to select the meats
+            System.out.println("Select your meats:");
+            // Iterate over each meats option and display it to the user
+            for (Meats meats : Meats.values()) {
+                System.out.println(meats.ordinal() + ") " + meats);
+            }
+            //Read the user's choice for the meats
+            int meatsChoice = scanner.nextInt();
+            //Get the corresponding meats value based on the user's choice
+            Meats selectedMeats = Meats.values()[meatsChoice];
+
+
+            //Ask the user to select the regular toppings
+            System.out.println("Select your regular toppings: ");
+            // Iterate over each regular toppings option and display it to the user
+            for (RegularToppings regularToppings : RegularToppings.values()) {
+                System.out.println(regularToppings.ordinal() + ") " + regularToppings);
+            }
+            //Read the user's choice for the regular toppings
+            int regularToppingsChoice = scanner.nextInt();
+            //Get the corresponding regular toppings value based on the user's choice
+            RegularToppings selectedRegularToppings = RegularToppings.values()[regularToppingsChoice];
+
+
+            //Ask the user to select the sauces
+            System.out.println("Select your sauces: ");
+            //Iterate over each sauces option and display it to the user
+            for (Sauces sauces : Sauces.values()) {
+                System.out.println(sauces.ordinal() + ") " + sauces);
+            }
+            //Read the user's choice for the sauces
+            int saucesChoice = scanner.nextInt();
+            //Get the corresponding sauces value based on the user's choice
+            Sauces selectedSauces = Sauces.values()[saucesChoice];
+
+            System.out.println("\nSandwich has been ordered successfully!\n");
 
         }
         public static void addDrink() {
@@ -64,5 +141,7 @@ import java.util.Scanner;
         public void exitApp () {
             running = false;
             System.out.println("Thank You, GoodBye!");
+
+            
         }
     }
