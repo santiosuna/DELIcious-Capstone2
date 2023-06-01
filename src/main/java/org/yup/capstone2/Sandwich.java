@@ -10,14 +10,14 @@ class Sandwich {
     private List<String> sauces;
     private boolean toasted;
 
-    public Sandwich(String bread, String size) {
+    public Sandwich(String bread, String size, ArrayList<String> toppings, boolean toasted) {
         this.bread = bread;
         this.size = size;
-        toppings = new ArrayList<>();
+        this.toppings = new ArrayList<>();
         meats = new ArrayList<>();
         cheeses = new ArrayList<>();
         sauces = new ArrayList<>();
-        toasted = false;
+        this.toasted = false;
     }
 
     public String getBread() {
