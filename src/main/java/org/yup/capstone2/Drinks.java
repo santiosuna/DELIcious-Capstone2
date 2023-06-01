@@ -4,36 +4,22 @@ import java.util.List;
 
 public class Drinks extends Product {
 
-    private String size;
+    private Size size;
     private DrinkFlavor myDrinks;
 
-    public Drinks(String name, double totalPrice, String size) {
+    public Drinks(String name, double totalPrice, Size size) {
         super(name, totalPrice);
         this.size = size;
     }
 
-    public String getSize() {
+    public Size getSize() {
         return size;
 
     }
 
-    public void setSize(String size) {
+    public void setSize(Size size) {
         this.size = size;
     }
-
-    public enum Size {
-        SMALL ("S"),
-        MEDIUM ("M"),
-        LARGE ("L");
-
-        private final String displayName;
-
-        Size(String displayName){
-            this.displayName = displayName;
-        }
-        public String getDisplayName() {
-            return displayName;
-        }
-    }
 }
+
 
