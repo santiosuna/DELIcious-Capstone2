@@ -1,7 +1,7 @@
 package org.yup.capstone2;
 import java.util.ArrayList;
 import java.util.List;
-class Sandwich extends Product {
+class Sandwich {
     private String bread;
     private String size;
     private List<String> toppings;
@@ -10,14 +10,14 @@ class Sandwich extends Product {
     private List<String> sauces;
     private boolean toasted;
 
-    public Sandwich(String name, double totalPrice, String bread, String size, List<String> toppings, List<String> cheeses, List<String> sauces, boolean toasted) {
-        super(name, totalPrice);
+    public Sandwich(String bread, String size, ArrayList<String> toppings, boolean toasted) {
         this.bread = bread;
         this.size = size;
-        this.toppings = toppings;
-        this.cheeses = cheeses;
-        this.sauces = sauces;
-        this.toasted = toasted;
+        this.toppings = new ArrayList<>();
+        meats = new ArrayList<>();
+        cheeses = new ArrayList<>();
+        sauces = new ArrayList<>();
+        this.toasted = false;
     }
 
     public String getBread() {

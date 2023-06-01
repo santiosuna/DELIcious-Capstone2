@@ -1,8 +1,8 @@
 //package org.yup.capstone2;
-//
 //import java.io.*;
 //import java.util.ArrayList;
 //import java.util.List;
+//import java.util.Random;
 //import java.util.Scanner;
 //
 //public class CheckoutScreen {
@@ -19,28 +19,23 @@
 //    public double calculateTotal() {
 //        double totalPrice = 0;
 //        totalPrice = calculateSubtotal() + calculateSalesTax();
+//
 //        return totalPrice;
 //    }
-//
 //    public double calculateSubtotal() {
-//        ArrayList<Product> cartSubTotal = new ArrayList<>();
-//        double subtotal = 0;
+//        double subtotal;
+//        subtotal = sandwich.getPrice() + drink.getPrice() + chips.getPrice();
 //
-//        for (Product product : products) {
-//            subtotal += product.getTotalPrice();
-//        }
 //        return subtotal;
 //    }
-//
 //    public double calculateSalesTax() {
-//        final double taxPercentage = .06;
-//        double salesTax;
+//       final double taxPercentage = .06;
+//       double salesTax;
 //
 //        salesTax = calculateSubtotal() * taxPercentage;
 //
 //        return salesTax;
 //    }
-//
 //    public void checkout() throws IOException {
 //        while (isCheckingOut) {
 //            Scanner scan = new Scanner(System.in);
@@ -100,78 +95,73 @@
 //        isCheckingOut = false;
 //    }
 //
-//    public String itemString() throws IOException {
+//    public String itemString() {
 //        String itemDescription = null;
 //
 //        for (Product productLine : products) {
 //            if (productLine instanceof Sandwich) {
-//                itemDescription = String.format("%s on %s %s\t\t%.2f",
-//                        ((Sandwich) productLine).getMeats,
-//                        ((Sandwich) productLine).getSize(),
-//                        ((Sandwich) productLine).getBread(),
-//                        ((Sandwich) productLine).getTotalPrice());
-//            } else if (productLine instanceof Drinks) {//May have to make a drink Class and pass Drink flavors into it.
-//                itemDescription = String.format("%s %s\t\t%.2f", drink.getSize, drink.getFlavor, drink.getTotalPrice);
-//            } else if (productLine instanceof ChipFlavors) {
-//
+//                itemDescription = String.format("%s on %s %s\t\t%.2f", sandwich.getMeat, sandwich.getBread, sandwich.getSize,sandwich.getTotalPrice);
+//            } else if (!(productLine instanceof Product)) {//May have to make a drink Class and pass Drink flavors into it.
+//                itemDescription = String.format("%s %s\t\t%.2f",drink.getSize,drink.getFlavor,drink.getTotalPrice);
+//            } else if (productLine instanceof Chips) {
+//                if (order.contains(Chips instanceof Chips))
+//                itemDescription = String.format("%s\t\t%.2f", chips.getFlavor,chips.getTotalPrice);
 //            }
 //        }
-//            return itemDescription;
-//        }
-//
-//
-//        public String fileNameGenerator() {
-//            Scanner scanner = new Scanner(System.in);
-//
-//            System.out.println("Enter your name: ");
-//            String file = scanner.nextLine().toUpperCase();
-//
-//            return file;
-//        }
-//
-//        public void createReceipt (List < String > order) throws IOException {//probably writing to file
-//            FileWriter myWriter = new FileWriter(fileNameGenerator() + "'s receipt.txt", true);
-//
-//            myWriter.write(String.format("DELI-icious!\n" +
-//                            "Cashier: Bo Boberts\n" +
-//                            "Thank you for shopping with us!\n" +
-//                            "%s\n" +
-//                            "\"Subtotal\t\t%.2f\n" +
-//                            "tax (6%)\t\t%.2f" +
-//                            "Total Price\t\t%.2f",
-//                    itemString(),
-//                    calculateSubtotal(),
-//                    calculateSalesTax(),
-//                    calculateTotal()));
-//            myWriter.close();
-//        }
-//
-//        public void printReceipt () throws IOException {
-//            FileReader fileReader = new FileReader(fileNameGenerator() + "s' receipt.txt");
-//            BufferedReader myReader = new BufferedReader(fileReader);
-//            String line;
-//
-//            myReader.readLine();
-//
-//            while ((line = myReader.readLine()) != null) {
-//                String[] receiptPieces = line.split("\\|");
-//
-//                String name =
-//            }
-//        }
-//
-//
+//        return itemDescription;
 //    }
+//
+//    public String fileNameGenerator() {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Enter your name: ");
+//        String file = scanner.nextLine().toUpperCase();
+//
+//        return file;
+//    }
+//
+//    public void createReceipt(List<String> order) throws IOException {//probably writing to file
+//        FileWriter myWriter = new FileWriter(fileNameGenerator() + "'s receipt.txt" ,true);
+//
+//        myWriter.write(String.format("DELI-icious!\n" +
+//                "Cashier: Bo Boberts\n" +
+//                "Thank you for shopping with us!\n" +
+//                "%s\n" +
+//                "\"Subtotal\t\t%.2f\n" +
+//                "tax (6%)\t\t%.2f" +
+//                "Total Price\t\t%.2f",
+//                itemString(),
+//                calculateSubtotal(),
+//                calculateSalesTax(),
+//                calculateTotal()));
+//        myWriter.close();
+//    }
+//
+//    public void printReceipt() throws IOException {
+//        FileReader fileReader = new FileReader(fileNameGenerator() + "s' receipt.txt");
+//        BufferedReader myReader = new BufferedReader(fileReader);
+//        String line;
+//
+//        myReader.readLine();
+//
+//        while ( (line = myReader.readLine()) != null) {
+//            String[] receiptPieces = line.split("\\|");
+//
+//            String name =
+//        }
+//    }
+//
+//
+//
 //}
+//     - create a receipt ( Receipt receipt = new Receipt(things that make a receipt) )
+//    sout(receipt)
+//    if i want to display a receipt in the terminal i've gotta be able to read my newly created receipt file??
+//    but every receipt is a new file
 //
-//    // - create a receipt ( Receipt receipt = new Receipt(things that make a receipt) )
-//    //sout(receipt)
-//    //if i want to display a receipt in the terminal i've gotta be able to read my newly created receipt file??
-//    //but every receipt is a new file
-//
-//    //gonna be a receipt folder where the receipts get saved in
-//    //each new order is a receipt
-//    //in filewriter figure out how to get it to generate a new filename
-//    //receipt is txt not csv-+-+-+-+-+
-//
-//
+//    gonna be a receipt folder where the receipts get saved in
+//    each new order is a receipt
+//    in filewriter figure out how to get it to generate a new filename
+//    receipt is txt not csv-+-+-+-+-+
+
+
