@@ -29,7 +29,7 @@ import java.util.Scanner;
                         addSandwich();
                         break;
                     case 2:
-                        //addDrinkMethod();
+                        addDrink();
                         break;
                     case 3:
                         addChips();
@@ -130,10 +130,72 @@ import java.util.Scanner;
 
             System.out.println("\nSandwich has been ordered successfully!\n");
 
+            //TODO:ADD SANDWICH TO CART
+
         }
         public static void addDrink() {
-            //for loop that displays the drinks??
-           //they choose a drink, it goes to the order.
+            Scanner scanner = new Scanner(System.in);
+
+            double drinkPrice = 0;
+
+            DrinkFlavor drinkFlavor = null;
+            Size size = null;
+            int sizeCount = 1;
+            int flavorCount = 1;
+
+            ArrayList<DrinkFlavor> drinkInventory = new ArrayList<>();
+            drinkInventory.addAll(Arrays.asList(DrinkFlavor.values()));
+            Collections.sort(drinkInventory);
+
+
+            ArrayList<Size> drinkSizes = new ArrayList<>();
+            drinkSizes.addAll(Arrays.asList(Size.values()));
+            Collections.sort(drinkSizes);
+
+            System.out.println("Select your cup size: (Number) ");
+
+            for (Size drinkSize : drinkSizes) {
+                System.out.println(sizeCount + ") " + drinkSize.name());
+                sizeCount++;
+            }
+
+            int drinkSizeChoice = scanner.nextInt();
+
+            if (drinkSizeChoice == 1) {
+                size = Size.FOUR_INCH_or_SMALL;
+                drinkPrice = 2.00;
+            } else if (drinkSizeChoice == 2) {
+                size = Size.EIGHT_INCH_or_MEDIUM;
+                drinkPrice = 2.50;
+            } else if (drinkSizeChoice == 3) {
+                size = Size.TWELVE_INCH_or_LARGE;
+                drinkPrice = 3.00;
+            }
+
+            System.out.println("Type your drink name:");
+
+            for (DrinkFlavor flavors : drinkInventory) {
+                System.out.println(flavorCount + ") " + flavors.name());
+                flavorCount++;
+            }
+
+            scanner.nextLine();
+            String flavorChoice = scanner.nextLine().toUpperCase();
+
+            if (flavorChoice.equals("PINEAPPLEMANGO")) {
+                drinkFlavor = DrinkFlavor.PINEAPPLEMANGO;
+            } else if (flavorChoice.equals("ORANGE")) {
+                drinkFlavor = DrinkFlavor.ORANGE;
+            } else if (flavorChoice.equals("RASPBERRY")) {
+                drinkFlavor = DrinkFlavor.RASPBERRY;
+            } else if (flavorChoice.equals("LEMONWATER")) {
+                drinkFlavor = DrinkFlavor.LEMONWATER;
+            }
+
+            Drinks drinks = new Drinks(flavorChoice,drinkPrice,size,drinkFlavor);
+
+            //TODO:ADD DRINKS TO CART
+
         }
         public static void addChips() {
             Scanner scanner = new Scanner(System.in);
@@ -166,6 +228,7 @@ import java.util.Scanner;
                 chipFlavors = ChipFlavors.RUFFLES;
             }
 
+            //TODO:CHANGE CHIP PRICE
             Chips chips = new Chips(userChoice,2.25,chipFlavors);
 
             //TODO:ADD CHIPS TO CART
