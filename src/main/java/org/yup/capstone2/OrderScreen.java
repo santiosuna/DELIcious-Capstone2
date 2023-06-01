@@ -177,7 +177,6 @@ import java.util.Scanner;
         public void exitApp () {
             running = false;
             System.out.println("Thank You, GoodBye!");
-
             
         }
     }

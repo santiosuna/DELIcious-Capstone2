@@ -6,5 +6,6 @@ public enum ChipFlavors {
     HOTFRIES,
     RUFFLES,
     SPICYNACHODORITOS
+    
 }
 
