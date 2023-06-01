@@ -1,6 +1,6 @@
 package org.yup.capstone2;
 
-public enum Chips {
+public enum Chip {
 
     RANCHDORITOS,
     HOTFRIES,
