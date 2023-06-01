@@ -1,10 +1,8 @@
 package org.yup.capstone2;
 
 public class Main {
-    public static void main(String[] args) {System.out.println("test");
+    public static void main(String[] args) {
 
-
-
-
+        Drinks pineappleMango = new 
     }
 }

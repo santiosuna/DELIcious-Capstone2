@@ -16,5 +16,9 @@ public class Drinks extends Product {
     public void setSize(String size) {
         this.size = size;
     }
+
+    public enum drinkFlavor {
+        PINEAPPLEMANGO,
+    }
 }
 
