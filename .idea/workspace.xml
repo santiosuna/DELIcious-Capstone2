@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14298f4f-be86-451d-bd50-5e79615111e9" name="Changes" comment="updatedXml&amp;OrderScreen2">
+    <list default="true" id="14298f4f-be86-451d-bd50-5e79615111e9" name="Changes" comment="&quot;added code to order screen and more enums&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/CheckoutScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/CheckoutScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +31,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/yup/capstone2/Main.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -43,13 +42,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "sandwichMethod"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.yup.capstone2" />
