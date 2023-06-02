@@ -200,6 +200,8 @@ import java.util.Scanner;
 
             Drinks drinks = new Drinks(flavorChoice,drinkPrice,size,drinkFlavor);
 
+            System.out.println("Your " + drinkFlavor + " drink has successfully been added to your order!");
+
             return drinks;
         }
         public static Chips addChips() {
@@ -235,6 +237,8 @@ import java.util.Scanner;
 
             //TODO:CHANGE CHIP PRICE
             Chips chips = new Chips(userChoice,1.50,chipFlavors);
+
+            System.out.println("Your " + chipFlavors + " chips has successfully been added to your order!");
 
             return chips;
 
