@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14298f4f-be86-451d-bd50-5e79615111e9" name="Changes" comment="&quot;added code to order screen and more enums&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/capstone2/OrderScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +39,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sandwichMethod&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <state>
+      <entry key="keyToString" value="{&quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,&quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,&quot;git-widget-placeholder&quot;: &quot;sandwichMethod&quot;}" />
+    </state>
+  </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.yup.capstone2" />
@@ -98,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685644082900</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="another xml commit">
+      <created>1685818921764</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685818921764</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,7 +131,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mainMerge" />
     <MESSAGE value="updatedXml&amp;OrderScreen2" />
-    <option name="LAST_COMMIT_MESSAGE" value="updatedXml&amp;OrderScreen2" />
+    <MESSAGE value="another xml commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="another xml commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
