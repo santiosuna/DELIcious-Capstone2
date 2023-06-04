@@ -1,11 +1,10 @@
 package org.yup.capstone2;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
-    public class OrderScreen {
+import java.util.*;
+
+public class OrderScreen {
         private static boolean running = true;
+        private static ArrayList<Product> orderCart = new ArrayList<>();
         public static void display() throws IOException {
 
             while (running) {
@@ -33,12 +32,14 @@ import java.util.Scanner;
                     case 2:
                         addDrink();
                         //TODO: add addDrink to cart
+                        orderCart.add(addDrink());
                         //ex. myCart.add( addDrink() )
                         break;
                     case 3:
                         addChips();
                         //TODO: add addChips to cart
                         //ex. myCart.add( addChips() )
+                        orderCart.add(addChips());
                         break;
                     case 4:
                         //if they have empty order -> sout(Your cart is empty.)
