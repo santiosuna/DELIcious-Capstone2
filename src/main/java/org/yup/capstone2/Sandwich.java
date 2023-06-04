@@ -2,15 +2,15 @@ package org.yup.capstone2;
 import java.util.ArrayList;
 import java.util.List;
 class Sandwich {
-    private String bread;
-    private String size;
+    private Bread bread;
+    private SandwichSizes size;
     private List<String> toppings;
     private List<String> meats;
     private List<String> cheeses;
     private List<String> sauces;
     private boolean toasted;
 
-    public Sandwich(String bread, String size, ArrayList<String> toppings, boolean toasted) {
+    public Sandwich(Bread bread, SandwichSizes size, ArrayList<String> toppings, boolean toasted) {
         this.bread = bread;
         this.size = size;
         this.toppings = new ArrayList<>();
@@ -20,19 +20,19 @@ class Sandwich {
         this.toasted = false;
     }
 
-    public String getBread() {
+    public Bread getBread() {
         return bread;
     }
 
-    public void setBread(String bread) {
+    public void setBread(Bread bread) {
         this.bread = bread;
     }
 
-    public String getSize() {
+    public SandwichSizes getSize() {
         return size;
     }
 
-    public void setSize(String size) {
+    public void setSize(SandwichSizes size) {
         this.size = size;
     }
 
