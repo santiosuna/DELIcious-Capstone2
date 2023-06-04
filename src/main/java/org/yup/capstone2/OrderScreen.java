@@ -67,13 +67,13 @@ public class OrderScreen {
             //Ask the user to select the sandwich size
             System.out.println("Select your size:");
             //Iterate over each size option and display it to the user
-            for (Size size : Size.values()) {
+            for (SandwichSizes size : SandwichSizes.values()) {
                 System.out.println(size.ordinal() + ") " + size);
             }
             //Read the user's choice for the size
             int sizeChoice = scanner.nextInt();
             // Get the corresponding size value based on the user's choice
-            Size selectedSize = Size.values()[sizeChoice];
+            SandwichSizes selectedSize = SandwichSizes.values()[sizeChoice];
 
 
             //Ask the user to select the bread
@@ -146,7 +146,7 @@ public class OrderScreen {
             double drinkPrice = 0;
 
             DrinkFlavor drinkFlavor = null;
-            Size size = null;
+            DrinkSizes size = null;
             int sizeCount = 1;
             int flavorCount = 1;
 
@@ -155,27 +155,27 @@ public class OrderScreen {
             Collections.sort(drinkInventory);
 
 
-            ArrayList<Size> drinkSizes = new ArrayList<>();
-            drinkSizes.addAll(Arrays.asList(Size.values()));
+            ArrayList<DrinkSizes> drinkSizes = new ArrayList<>();
+            drinkSizes.addAll(Arrays.asList(DrinkSizes.values()));
             Collections.sort(drinkSizes);
 
             System.out.println("Select your cup size: (Number) ");
 
-            for (Size drinkSize : drinkSizes) {
-                System.out.println(sizeCount + ") " + drinkSize.name());
+            for (DrinkSizes drinkDrinkSizes : drinkSizes) {
+                System.out.println(sizeCount + ") " + drinkDrinkSizes.name());
                 sizeCount++;
             }
 
             int drinkSizeChoice = scanner.nextInt();
 
             if (drinkSizeChoice == 1) {
-                size = Size.FOUR_INCH_or_SMALL;
+                size = DrinkSizes.SMALL;
                 drinkPrice = 2.00;
             } else if (drinkSizeChoice == 2) {
-                size = Size.EIGHT_INCH_or_MEDIUM;
+                size = DrinkSizes.MEDIUM;
                 drinkPrice = 2.50;
             } else if (drinkSizeChoice == 3) {
-                size = Size.TWELVE_INCH_or_LARGE;
+                size = DrinkSizes.LARGE;
                 drinkPrice = 3.00;
             }
 

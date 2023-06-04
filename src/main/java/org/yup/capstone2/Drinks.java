@@ -1,25 +1,23 @@
 package org.yup.capstone2;
 
-import java.util.List;
-
 public class Drinks extends Product {
 
-    private Size size;
+    private DrinkSizes drinkSizes;
     private DrinkFlavor drinkFlavor;
 
-    public Drinks(String name, double totalPrice, Size size, DrinkFlavor drinkFlavor) {
+    public Drinks(String name, double totalPrice, DrinkSizes drinkSizes, DrinkFlavor drinkFlavor) {
         super(name, totalPrice);
-        this.size = size;
+        this.drinkSizes = drinkSizes;
         this.drinkFlavor = drinkFlavor;
     }
 
-    public Size getSize() {
-        return size;
+    public DrinkSizes getSize() {
+        return drinkSizes;
 
     }
 
-    public void setSize(Size size) {
-        this.size = size;
+    public void setSize(DrinkSizes drinkSizes) {
+        this.drinkSizes = drinkSizes;
     }
 }
 
